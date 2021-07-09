@@ -1,3 +1,4 @@
+// 从多个小问题的解的合并能够解决最终原问题的解。得出的递推式：res[i][j] = res[i-1][j] + res[i][j-1]
 var climbStairs = function (n) {
   let p = 0, q = 0, r = 1;
   for (let i = 1; i <= n; ++i) {
